@@ -206,16 +206,15 @@ section .title::after {
 }
 
 .about,
-.services,
+.projects,
 .skills,
-.teams,
 .contact,
 footer {
     font-family: 'Roboto', sans-serif;
 }
 
 .about .about-content,
-.services .serv-content,
+.projects .proj-content,
 .skills .skills-content,
 .contact .contact-content {
     display: flex;
@@ -223,9 +222,6 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-
-
-
 
 /*  sessão sobre  */
 
@@ -253,6 +249,7 @@ footer {
 
 .about .about-content .right p {
     text-align: justify;
+
 }
 
 .about .about-content .right a {
@@ -280,10 +277,9 @@ footer {
     border-radius: 6px;
 }
 
-
-/*  sessão especialidades  */
+/*  sessão skills  */
 .skills .title::after {
-    content: "Que faço";
+    content: "Hards e Softs";
 }
 
 .skills .skills-content .column {
@@ -369,83 +365,57 @@ footer {
     width: 42%;
 }
 
-
-
-
-/*  sessão equipe  */
-.teams .title::after {
-    content: "Especializada";
+/*  sessão projetos */
+.projects {
+    background: #111;
+    color: #fff;
 }
 
-.teams .carousel .card {
+.projects .title::before {
+    background: #fff;
+}
+
+.projects .title::after {
+    background: #111;
+    content: "Lorem ipsulum";
+}
+
+.projects .proj-content .card {
+    width: calc(33% - 20px);
     background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
     text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover {
+.projects .proj-content .card:hover {
     background: #6621CA;
 }
 
-.teams .carousel .card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #6621CA;
+.projects .proj-content .card .box {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.teams .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover .box {
+.projects .proj-content .card:hover .box {
     transform: scale(1.05);
 }
 
-.teams .carousel .card .text {
+.projects .proj-content .card ion-icon {
+    font-size: 50px;
+    color: #6621CA;
+}
+
+.projects .proj-content .card:hover ion-icon {
+    color: #fff;
+}
+
+.projects .proj-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    width: 14px;
-    height: 14px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid #6621CA !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 15px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: #6621CA !important;
-}
-
-
-
 
 /*  sessão Contato  */
 .contact .title::after {
