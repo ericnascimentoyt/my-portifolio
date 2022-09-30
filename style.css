@@ -277,9 +277,61 @@ footer {
     border-radius: 6px;
 }
 
+/*  sessão projetos */
+.projects {
+    background: #111;
+    color: #fff;
+}
+
+.projects .title::before {
+    background: #fff;
+}
+
+.projects .title::after {
+    background: #111;
+    content: "Lorem ipsulum";
+}
+
+.projects .proj-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects .proj-content .card:hover {
+    background: #6621CA;
+}
+
+.projects .proj-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.projects .proj-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.projects .proj-content .card ion-icon {
+    font-size: 50px;
+    color: #6621CA;
+}
+
+.projects .proj-content .card:hover ion-icon {
+    color: #fff;
+}
+
+.projects .proj-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 /*  sessão skills  */
 .skills .title::after {
-    content: "Hards e Softs";
+    content: "Hards";
 }
 
 .skills .skills-content .column {
@@ -346,75 +398,19 @@ footer {
 }
 
 .skills .skills-content .right .html::before {
-    width: 93%;
+    width: 89%;
 }
 
 .skills .skills-content .right .css::before {
-    width: 85%;
+    width: 50%;
 }
 
 .skills .skills-content .right .js::before {
-    width: 87%;
-}
-
-.skills .skills-content .right .php::before {
-    width: 47%;
+    width: 45%;
 }
 
 .skills .skills-content .right .mysql::before {
-    width: 42%;
-}
-
-/*  sessão projetos */
-.projects {
-    background: #111;
-    color: #fff;
-}
-
-.projects .title::before {
-    background: #fff;
-}
-
-.projects .title::after {
-    background: #111;
-    content: "Lorem ipsulum";
-}
-
-.projects .proj-content .card {
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.projects .proj-content .card:hover {
-    background: #6621CA;
-}
-
-.projects .proj-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.projects .proj-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-.projects .proj-content .card ion-icon {
-    font-size: 50px;
-    color: #6621CA;
-}
-
-.projects .proj-content .card:hover ion-icon {
-    color: #fff;
-}
-
-.projects .proj-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+    width: 78%;
 }
 
 /*  sessão Contato  */
@@ -438,9 +434,7 @@ footer {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
-}
-
-.contact .contact-content .left .icons {
+}.contact .contact-content .left .icons {
     margin: 10px 0;
 }
 
