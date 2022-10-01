@@ -289,7 +289,6 @@ footer {
 
 .projects .title::after {
     background: #111;
-    content: "Lorem ipsulum";
 }
 
 .projects .proj-content .card {
@@ -415,7 +414,7 @@ footer {
 
 /*  sessão Contato  */
 .contact .title::after {
-    content: "Fale conosco";
+    content: "Fale comigo";
 }
 
 .contact .contact-content .column {
