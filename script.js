@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(window).scroll(function () {
+$(window).scroll(function () {
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
@@ -16,13 +16,13 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typing", {
-        strings: ["Digital commerce Expert", "Analista de sistemas", "Consultor de Integração", "Especialista Vtex"],
+        strings: ["Certificado VTEX Implementation", "Digital commerce Expert", "Analista de sistemas", "Consultor de Integração", "Especialista Vtex"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Digital commerce Expert", "Analista de sistemas", "Consultor de Integração", "Especialista Vtex"],
+        strings: ["Certificado VTEX Implementation", "Digital commerce Expert", "Analista de sistemas", "Consultor de Integração", "Especialista Vtex"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
@@ -52,4 +52,20 @@ $(document).ready(function () {
             }
         }
     });
+
+    const button = document.querySelector('button')
+    const popup = document.querySelector('.popup-wrapper')
+    const closeButton = document.querySelector('.popup-close')
+
+    button.addEventListener('click', () => {
+     popup.style.display = 'block'
+    })
+
+    closeButton.addEventListener('click', () => {
+     popup.style.display = 'none'
+    })
+
+    popup.addEventListener('click', event => {
+     popup.style.display = 'none'
+    })
 });
