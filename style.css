@@ -278,54 +278,78 @@ footer {
 }
 
 /*  sessão projetos */
-.projects {
-    background: #111;
-    color: #fff;
-}
 
-.projects .title::before {
-    background: #fff;
-}
-
-.projects .title::after {
-    background: #111;
-}
-
-.projects .proj-content .card {
-    width: calc(33% - 20px);
+.projects .carousel .card {
     background: #222;
-    text-align: center;
     border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
+    padding: 25px 35px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
-.projects .proj-content .card:hover {
+.projects .carousel .card:hover {
     background: #6621CA;
 }
 
-.projects .proj-content .card .box {
+.projects .carousel .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #6621CA;
     transition: all 0.3s ease;
 }
 
-.projects .proj-content .card:hover .box {
+.projects .carousel .card:hover img {
+    border-color: rgb(250, 250, 250);
+}
+
+.projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.projects .carousel .card:hover .box {
     transform: scale(1.05);
 }
 
-.projects .proj-content .card ion-icon {
-    font-size: 50px;
-    color: #6621CA;
-}
-
-.projects .proj-content .card:hover ion-icon {
-    color: #fff;
-}
-
-.projects .proj-content .card .text {
+.projects .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: white;
+}
+
+.projects p {
+    color: white;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    width: 14px;
+    height: 14px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #6621CA !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 15px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #6621CA !important;
 }
 
 /*  sessão skills  */
