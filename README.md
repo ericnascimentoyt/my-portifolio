@@ -31,5 +31,5 @@ Este portfólio é um projeto em constante evolução. Pretendo adicionar novos 
 
 ## Contato
 
-- Email: ericebpro@gmail.com
+- Email: ericnascimento.dev@gmail.com
 - LinkedIn: https://www.linkedin.com/in/ericnascimentoyt
