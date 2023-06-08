@@ -16,15 +16,15 @@ $(window).scroll(function () {
     });
 
     var typed = new Typed(".typing", {
-        strings: ["Certificado VTEX Implementation", "Digital commerce Expert", "Analista de sistemas", "Consultor de Integração", "Especialista Vtex"],
-        typeSpeed: 100,
-        backSpeed: 70,
+        strings: ["Dev Front-end.", "Solutions Architect VTEX.", "Expert Avanti."],
+        typeSpeed: 70,
+        backSpeed: 30,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Certificado VTEX Implementation", "Digital commerce Expert", "Analista de sistemas", "Consultor de Integração", "Especialista Vtex"],
-        typeSpeed: 100,
-        backSpeed: 70,
+        strings: ["Dev Front-end", "Solutions Architect VTEX", "Expert Avanti"],
+        typeSpeed: 70,
+        backSpeed: 30,
         loop: true
     });
 
