@@ -18,8 +18,6 @@ html {
 }
 
 
-
-
 /*  navbar   inicio*/
 .navbar {
     position: fixed;
@@ -83,8 +81,8 @@ html {
 /*  Home   inicio  */
 .home {
     display: flex;
-    background: url(images/banner-3.png) no-repeat;
     background-size: cover;
+    background-image: url(images/banner-1.png);
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -226,7 +224,7 @@ footer {
 /*  sessão sobre  */
 
 .about .title::after {
-    content: "Quem sou eu";
+    content: "";
 }
 
 .about .about-content .left {
@@ -354,7 +352,7 @@ footer {
 
 /*  sessão skills  */
 .skills .title::after {
-    content: "Hards";
+    content: "";
 }
 
 .skills .skills-content .column {
@@ -438,7 +436,7 @@ footer {
 
 /*  sessão Contato  */
 .contact .title::after {
-    content: "Fale comigo";
+    content: "";
 }
 
 .contact .contact-content .column {
