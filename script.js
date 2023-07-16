@@ -16,13 +16,13 @@ $(window).scroll(function () {
     });
 
     var typed = new Typed(".typing", {
-        strings: ["Dev Front-end.", "Solutions Architect VTEX.", "Expert Avanti."],
+        strings: ["Dev.", "Solutions Architect VTEX.", "Sales Engineer."],
         typeSpeed: 70,
         backSpeed: 30,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Dev Front-end", "Solutions Architect VTEX", "Expert Avanti"],
+        strings: ["Dev.", "Solutions Architect VTEX.", "Sales Engineer."],
         typeSpeed: 70,
         backSpeed: 30,
         loop: true
